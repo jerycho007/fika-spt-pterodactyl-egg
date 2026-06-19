@@ -41,7 +41,7 @@
         },
         {
             "name": "Auto Update SPT",
-            "description": "Wenn aktiviert, aktualisiert der Container SPT automatisch bei Versionsfehlanpassung.",
+            "description": "Wenn aktiviert, aktualisiert der Container SPT automatisch bei Versionsfehlanpassunga.",
             "env_variable": "AUTO_UPDATE_SPT",
             "default_value": "true",
             "user_viewable": true,
