@@ -10,7 +10,7 @@ spt_binary=SPT.Server.Linux
 backup_dir_name=${BACKUP_DIR:-backups}
 backup_dir=$mounted_dir/$backup_dir_name
 
-spt_version=${SPT_VERSION:-4.0.11-40087-278e72b}
+spt_version=${SPT_VERSION:-4.0.13-40087-2891fd4}
 spt_version=$(echo $spt_version | cut -d '-' -f 1)
 spt_backup_dir=$backup_dir/spt/$(date +%Y%m%dT%H%M)
 # if force spt version, ignore all version checks and disable user folder backup
@@ -24,7 +24,7 @@ spt_data_dir=$spt_dir/SPT_Data
 enable_spt_listen_on_all_networks=${LISTEN_ALL_NETWORKS:-true}
 
 
-fika_version=${FIKA_VERSION:-2.1.0}
+fika_version=${FIKA_VERSION:-2.3.3}
 install_fika=${INSTALL_FIKA:-true}
 fika_backup_dir=$backup_dir/fika/$(date +%Y%m%dT%H%M)
 fika_config_path=assets/configs/fika.jsonc
