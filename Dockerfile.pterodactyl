@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/aspnet:9.0-bookworm-slim
+FROM mcr.microsoft.com/dotnet/sdk:10.0-noble-arm64v8 AS build
 
 # Pterodactyl/Pelican Panel compatible Dockerfile
 # Uses /home/container as working directory with container user
