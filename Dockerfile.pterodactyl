@@ -8,7 +8,7 @@ RUN apt update && apt install -y --no-install-recommends \
     aria2 \
     ca-certificates \
     unzip \
-    7zip \
+    p7zip-full \
     vim \
     cron \
     exiftool \
@@ -31,7 +31,7 @@ RUN useradd -m -d /home/container -s /bin/bash container
 # Download SPT to build directory
 WORKDIR /opt/build
 RUN curl -sL "https://spt-releases.modd.in/SPT-${SPT_VERSION}.7z" -o spt.7z
-RUN 7zz x spt.7z
+RUN 7z x spt.7z
 
 # Copy scripts
 COPY entrypoint-pterodactyl.sh /usr/bin/entrypoint
