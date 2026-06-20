@@ -5,7 +5,7 @@
 
 build_dir=/opt/build
 mounted_dir=/home/container
-spt_binary=SPT.Server.Linux
+spt_binary=SPT.Server
 
 backup_dir_name=${BACKUP_DIR:-backups}
 backup_dir=$mounted_dir/$backup_dir_name
